@@ -9,9 +9,9 @@ ADD https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.t
 RUN tar -xvzf openjdk-11.0.2_linux-x64_bin.tar.gz
 RUN rm openjdk-11.0.2_linux-x64_bin.tar.gz
 
-ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.71/bin/apache-tomcat-9.0.71.tar.gz .
-RUN tar -xvzf apache-tomcat-9.0.71.tar.gz
-RUN rm apache-tomcat-9.0.71.tar.gz
+ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz .
+RUN tar -xvzf apache-tomcat-9.0.91.tar.gz
+RUN rm apache-tomcat-9.0.91.tar.gz
 
 COPY target/sailor.war ${TOMCAT_HOME}/webapps
 COPY run.sh /tmp
